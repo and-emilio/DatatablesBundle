@@ -141,8 +141,8 @@ $ php app/console sg:datatable:generate AppBundle:Post --bootstrap3
 If your application is based on Symfony 3, replace `php app/console` by `php bin/console`.
 
 ### Step 2: Registering your Datatable as a Service
-
 ```yaml
+# app/config/services.yml
 services:
     app.datatable.post:
         class: AppBundle\Datatables\PostDatatable
